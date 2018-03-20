@@ -92,14 +92,14 @@ class App extends Component {
                   <div className = "info">
 
                   
-                    <h3> I am a Full-Stack Developer who is currently enrolled
+                     I am a Full-Stack Developer who is currently enrolled
                         in Northwestern University as a Sophomore studyign Computer Science
                         I want to get a job but I can't so you really should hire me
                         I like to code and do some cool stuff so I u shud defo hire me fo sho
                         in Northwestern University as a Sophomore studyign Computer Science
                         I want to get a job but I can't so you really should hire me
-                        I like to code and do some cool stuff so I u shud defo hire me fo sho
-                    </h3>
+                        I like to code and do some cool stuff so I u shud defo hire me fo sho!
+                    
                     <img className = "photo" src = 'https://i.imgur.com/tnUFInc.jpg'/>
                   </div>
                   </ScrollAnimation>

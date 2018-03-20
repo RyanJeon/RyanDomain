@@ -78,6 +78,8 @@ nav {
   align-self: center;
   width: 60%;
   margin-left: 20%;
+
+  font-size: 1.5vw;
 }
 
 .photo{
@@ -85,13 +87,6 @@ nav {
   height: 400px;
 
 }
-
-@media screen and (max-width: 850px){
-  .photo{
-    height: 200px;
-  }
-}
-
 
 h1 {
   font-weight: normal;
@@ -103,9 +98,25 @@ h2 {
   font-size: 5vw;
 }
 
-h3{
-  font-weight: normal;
-  font-size: 1.5vw;
+
+@media screen and (max-width: 850px){
+  .info{
+    display: block;
+
+    font-size: 15px;
+    
+  }
+  .photo{
+    margin-top: 10%;
+    height: 200px;
+  }
+
+
 }
+
+
+
+
+
 
 
