@@ -118,12 +118,15 @@ h2 {
   .info{
     display: flex;
     margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100%;
+    font-size:12px;
 
   }
   .photo{
     margin-top: 0%;
     margin-bottom: 10%;
-    height: 200px;
+    height: 150px;
     
   }
   
