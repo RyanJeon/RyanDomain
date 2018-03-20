@@ -104,6 +104,7 @@ h2 {
     display: block;
 
     font-size: 15px;
+    width: 80%;
     
   }
   .photo{
@@ -112,6 +113,21 @@ h2 {
   }
 
 
+}
+
+@media screen and (max-height: 490px){
+  .info{
+    display: flex;
+    margin-left: 10%;
+
+  }
+  .photo{
+    margin-top: 0%;
+    margin-bottom: 10%;
+    height: 200px;
+    
+  }
+  
 }
 
 
