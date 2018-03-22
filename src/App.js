@@ -5,20 +5,8 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { bounce, fadeIn } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
-
-
-
-const HeroBanner = ({ image, min, max, children, color, container}) => (
-  <div className="hero-container">
-      <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate>
-          <div
-              className="hero-image"
-              style={{ backgroundImage: `url(${image})` }}
-          />
-      </Parallax>
-      <div className={container}>{children}</div>
-  </div>
-);
+import Cbutton from './components/Cbutton';
+import Banner from './components/Banner';
 
 
 
@@ -59,18 +47,27 @@ class App extends Component {
 
             <StyleRoot>
             <div className="test" style={styles.fadeIn}>
-              <HeroBanner
+              <Banner
                   min={'-50%'}
                   max={'50%'}
-                  image= "http://www.tokkoro.com/picsup/1105878-bangkok.jpg"
-                  container = "hero-children"
+                  image= {require("./images/banner.jpg")}
+                  container = "BannerChildren"
               >
+                <div>
                   <h1>Hi! My Name is Ryan!</h1>
-              </HeroBanner>
+                  
+                  <div className = "Buttons">
+                    <div className = "ButtonWrapper">
+                    <Cbutton label = "LinkedIn" link = "https://www.linkedin.com/in/ryan-yejun-jeon-70b4a7145/" />
+                    <Cbutton label = "View Source Code" link = "https://github.com/RyanJeon/RyanDomain"/>
+                    </div>
+                  </div>
+                </div>
+              </Banner>
               </div>
             </StyleRoot>
 
-            <HeroBanner
+            <Banner
                 min={'-50%'}
                 max={'50%'}
                 container = "info-box"
@@ -110,16 +107,16 @@ class App extends Component {
                 
 
 
-            </HeroBanner>
+            </Banner>
 
-            <HeroBanner
+            <Banner
                 min={'-50%'}
                 max={'50%'}
                 image= "http://www.tokkoro.com/picsup/1105878-bangkok.jpg"
                 container = "hero-children"
             >
                 <h1>Hi! My Name is Ryan!</h1>
-            </HeroBanner>
+            </Banner>
 
             
         </main>

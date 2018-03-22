@@ -20,32 +20,6 @@ nav {
   background-color: rgba(#4DD0E1, 0.85);
 }
 
-.hero-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.hero-image {
-  width: 100vw;
-  height: 150vh; 
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-children {
-  color: white;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* Information styling*/
 
@@ -85,6 +59,22 @@ nav {
 .photo{
   margin-left: 5%;
   height: 400px;
+
+}
+
+.ButtonsWrapper{
+  display: block;
+
+}
+
+
+.Buttons{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  
 
 }
 
