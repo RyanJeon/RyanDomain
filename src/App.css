@@ -61,12 +61,13 @@ nav {
 
 
   height: 50%;
+  width: 300px;
 
-  margin-left: 0%;
+
   line-height: 200px;
   vertical-align: middle;
   
-  font-size: 1.5vw;
+  font-size: 2.5vw;
 }
 
 .InfoButtons{
@@ -110,7 +111,24 @@ h2 {
 }
 
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 450px){
+  h1 {
+    font-weight: normal;
+    font-size: 17vw;
+  }
+
+  .InfoButtons{
+    display: block;
+    width: 100%;
+    padding-left: 5%;
+    justify-content: center;
+
+  }
+
+  .info{
+    font-size: 10vw;
+  }
+
 
 
 
