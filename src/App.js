@@ -23,6 +23,21 @@ const styles = {
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {secondBack: require("./images/nightsk.jpeg"),
+                    info: "I can be anything.."
+  };
+  }
+
+
+  changeSecondBack(tag, info){
+    this.setState({secondBack: require(`./images/${tag}`)});
+    this.setState({info: info});
+    console.log('lol')
+
+
+  }
 
   render() {
     return (
@@ -56,7 +71,7 @@ class App extends Component {
                 min={'-50%'}
                 max={'50%'}
                 container = "info-box"
-                image= {require("./images/nightsk.jpeg")}
+                image= {this.state.secondBack}
                 
             >
 
@@ -68,30 +83,36 @@ class App extends Component {
 
                 
                 <div className = "info-box">
+
+                  <div className = "infContainer">
                     <ScrollAnimation animateIn="fadeIn" duration={4}  animateOnce={true}>
                       <div className = "InfoButtons">
-                      <div className = "ButtonWrapper">
-                      <h3>
-                       I am a/an..
-                      </h3>
-                      <Cbutton width = "300px" label = "Developer" link = "https://github.com/RyanJeon/RyanDomain"/>
-                      <Cbutton width = "300px" label = "Explorer" link = "https://github.com/RyanJeon/RyanDomain"/>
-                      <Cbutton width = "300px" label = "Leader" link = "https://github.com/RyanJeon/RyanDomain"/>
+                        <div className = "ButtonWrapper">
+                            <h3  onClick = {this.changeSecondBack.bind(this, 'nightsk.jpeg', 'I can be anything..')}>
+                            I am a/an..
+                            </h3>
+
+                            <div  onClick = {this.changeSecondBack.bind(this, 'devel.jpg', 'A Developer')}>
+                              <Cbutton width = "300px" label = "Developer"/>
+                            </div>
+                            <div  onClick = {this.changeSecondBack.bind(this, 'explorer.jpg', 'An explorer')}>
+                            <Cbutton width = "300px" label = "Explorer" />
+                            </div>
+                            <div  onClick = {this.changeSecondBack.bind(this, 'leader.jpg', 'A Leader')}>
+                            <Cbutton width = "300px" label = "Leader" />
+                            </div>
+
+                        </div>
+
+                              <div className = "info">
+                                   {this.state.info}
+                              
+                            </div>
                       </div>
-                      </div>
-                      <div className = "info">
 
                       
-                        I am a Full-Stack Developer who is currently enrolled
-                            in Northwestern University as a Sophomore studyign Computer Science
-                            I want to get a job but I can't so you really should hire me
-                            I like to code and do some cool stuff so I u shud defo hire me fo sho
-                            in Northwestern University as a Sophomore studyign Computer Science
-                            I want to get a job but I can't so you really should hire me
-                            I like to code and do some cool stuff so I u shud defo hire me fo sho!
-                        
-                      </div>
                     </ScrollAnimation>
+                  </div>
                 </div>
             </Banner>
 

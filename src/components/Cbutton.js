@@ -4,10 +4,14 @@ import '../styles/Cbutton.css';
 
 
 function raiseInvoiceClicked(link){
+
+    if(link === "" || link === null){
+        return //Not going
+    }
     window.open(link);
 }
 
-const Cbutton = ({ label, link, width }) => (
+const Cbutton = ({ label, link = "", width }) => (
 
 
 

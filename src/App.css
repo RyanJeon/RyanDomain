@@ -44,28 +44,40 @@ nav {
 
 }
 
+.infContainer{
+
+  height: 100%;
+  width: 100%;
+
+
+
+  display: flex;
+}
+
 .info{
 
   font-family: 'Lato', sans-serif;
   text-align: center;
 
-  width: 30%;
-  height: 70%;
 
+  height: 50%;
 
-  margin-left: 61%;
-  margin-top: 13%;
+  margin-left: 0%;
+  line-height: 200px;
+  vertical-align: middle;
+  
   font-size: 1.5vw;
 }
 
 .InfoButtons{
 
   float: left;
-  margin-top: 13%;
+  margin-top: 40%;
   height: 70%;
-  width: 50%;
+  width: 170%;
 
-  padding-left: 10%;
+  justify-content: space-between;
+  padding-left: 20%;
   display: flex;
 }
 
