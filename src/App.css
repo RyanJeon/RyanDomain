@@ -26,41 +26,50 @@ nav {
 
 .info-box{
 
-  color: black;
+  color: white;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   
+  display: flex;
   text-align: center;
   justify-content: center;
 
 }
+
 
 .info-title{
 
 }
 
 .info{
+
   font-family: 'Lato', sans-serif;
   text-align: center;
-  background:white;
+
+  width: 30%;
+  height: 70%;
 
 
-  display: flex;
-  align-self: center;
-  width: 60%;
-  margin-left: 20%;
-
+  margin-left: 61%;
+  margin-top: 13%;
   font-size: 1.5vw;
 }
 
-.photo{
-  margin-left: 5%;
-  height: 400px;
+.InfoButtons{
 
+  float: left;
+  margin-top: 13%;
+  height: 70%;
+  width: 50%;
+
+  padding-left: 10%;
+  display: flex;
 }
+
+
 
 .ButtonsWrapper{
   display: block;
@@ -90,35 +99,15 @@ h2 {
 
 
 @media screen and (max-width: 850px){
-  .info{
-    display: block;
 
-    font-size: 15px;
-    
-  }
-  .photo{
-    margin-top: 10%;
-    height: 200px;
-  }
+
 
 
 }
 
 @media screen and (max-height: 490px){
-  .info{
-    display: flex;
-    margin-left: 10%;
-    width: 80%;
-    margin-bottom: 100%;
-    font-size:12px;
 
-  }
-  .photo{
-    margin-top: 0%;
-    margin-bottom: 10%;
-    height: 150px;
-    
-  }
+
   
 }
 

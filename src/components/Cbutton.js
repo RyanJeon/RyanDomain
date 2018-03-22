@@ -7,11 +7,11 @@ function raiseInvoiceClicked(link){
     window.open(link);
 }
 
-const Cbutton = ({ label, link }) => (
+const Cbutton = ({ label, link, width }) => (
 
 
 
-    <div className = "SCbutton" onClick = {raiseInvoiceClicked.bind(this, link)}>
+    <div style = {{width: width}} className = "SCbutton" onClick = {raiseInvoiceClicked.bind(this, link)}>
         {label}
 
     </div>

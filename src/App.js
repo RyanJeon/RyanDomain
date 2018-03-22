@@ -18,26 +18,11 @@ const styles = {
   fadeIn: {
     animation: 'x 3s',
     animationName: Radium.keyframes(fadeIn, 'fadeIn')
-  }
+  },
+
 }
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      animation: 'fadeIn',
-    };
-
-    this.triggerAnimation = this.triggerAnimation.bind(this);
-  }
-
-  triggerAnimation() {
-    const { animation } = this.state;
-    this.setState({ animation: '' }, () => {
-      this.setState({ animation });
-    });
-  }
-
 
   render() {
     return (
@@ -54,7 +39,7 @@ class App extends Component {
                   container = "BannerChildren"
               >
                 <div>
-                  <h1>Hi! My Name is Ryan!</h1>
+                  <h1>Meet Ryan!</h1>
                   
                   <div className = "Buttons">
                     <div className = "ButtonWrapper">
@@ -71,42 +56,43 @@ class App extends Component {
                 min={'-50%'}
                 max={'50%'}
                 container = "info-box"
+                image= {require("./images/nightsk.jpeg")}
                 
             >
 
-           
-                <div className = "info-box">
-                  <div className = "info-title">
-
-                  
-
-                  <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
-                    <h2> Who Am I? </h2>
-                  </ScrollAnimation>
-                  </div>
-
-                  <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
-                  <div className = "info">
-
-                  
-                     I am a Full-Stack Developer who is currently enrolled
-                        in Northwestern University as a Sophomore studyign Computer Science
-                        I want to get a job but I can't so you really should hire me
-                        I like to code and do some cool stuff so I u shud defo hire me fo sho
-                        in Northwestern University as a Sophomore studyign Computer Science
-                        I want to get a job but I can't so you really should hire me
-                        I like to code and do some cool stuff so I u shud defo hire me fo sho!
-                    
-                    <img className = "photo" src = 'https://i.imgur.com/tnUFInc.jpg'/>
-                  </div>
-                  </ScrollAnimation>
-
+                <div className = "info-title"> 
+                    <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                      <h2> 	&#8212; About Me &#8212; </h2>
+                    </ScrollAnimation>
                 </div>
 
-            
                 
+                <div className = "info-box">
+                    <ScrollAnimation animateIn="fadeIn" duration={4}  animateOnce={true}>
+                      <div className = "InfoButtons">
+                      <div className = "ButtonWrapper">
+                      <h3>
+                       I am a/an..
+                      </h3>
+                      <Cbutton width = "300px" label = "Developer" link = "https://github.com/RyanJeon/RyanDomain"/>
+                      <Cbutton width = "300px" label = "Explorer" link = "https://github.com/RyanJeon/RyanDomain"/>
+                      <Cbutton width = "300px" label = "Leader" link = "https://github.com/RyanJeon/RyanDomain"/>
+                      </div>
+                      </div>
+                      <div className = "info">
 
-
+                      
+                        I am a Full-Stack Developer who is currently enrolled
+                            in Northwestern University as a Sophomore studyign Computer Science
+                            I want to get a job but I can't so you really should hire me
+                            I like to code and do some cool stuff so I u shud defo hire me fo sho
+                            in Northwestern University as a Sophomore studyign Computer Science
+                            I want to get a job but I can't so you really should hire me
+                            I like to code and do some cool stuff so I u shud defo hire me fo sho!
+                        
+                      </div>
+                    </ScrollAnimation>
+                </div>
             </Banner>
 
             <Banner
