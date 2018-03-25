@@ -5,6 +5,7 @@ import '../App.css';
 
 
 
+
 const Banner = ({ image, min, max, children, color, container}) => (
     <div className="hero-container">
         <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate>
@@ -18,4 +19,6 @@ const Banner = ({ image, min, max, children, color, container}) => (
 );
 
 
-export default Banner;
+
+
+export {Banner};
