@@ -68,7 +68,7 @@ class App extends Component {
                   <div className = "Buttons">
                     <div className = "ButtonWrapper">
                     <Cbutton label = "LinkedIn" link = "https://www.linkedin.com/in/ryan-yejun-jeon-70b4a7145/" />
-                    <Cbutton label = "Resume" link = "https://www.linkedin.com/in/ryan-yejun-jeon-70b4a7145/" />
+                    <Cbutton label = "Resume" link = "https://drive.google.com/file/d/1IpYA07nDMGNZCquxinFjhmuBIEe1G6up/view?usp=sharing" />
                     <Cbutton label = "View Source Code" link = "https://github.com/RyanJeon/RyanDomain"/>
                     </div>
                   </div>
