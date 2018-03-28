@@ -53,7 +53,7 @@ class App extends Component {
   };
 
   this.project = {
-    domain: "This domain on it's own is a constantly on-going project!"+
+    domain: "This website on it's own is a constantly on-going project!"+
           " I am updating the website frequently to make the interface"+
           " more interactly & asthetic. Please do contact me for any advice"+
           " or suggestions!",
@@ -159,7 +159,7 @@ class App extends Component {
 
                   <ProjectSection 
                   description = {this.project.domain}
-                  title = "This Domain"
+                  title = "This Website"
                   image = {require("./images/codingico.png")}
                   link = "https://github.com/RyanJeon/RyanDomain"
                   />  
