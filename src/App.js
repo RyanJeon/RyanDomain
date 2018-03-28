@@ -7,6 +7,8 @@ import { bounce, fadeIn, fadeOut } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import Cbutton from './components/Cbutton';
 import {Banner} from './components/Banner';
+import ProjectSection from './components/projectSection';
+import First from './Pages/First';
 
 
 
@@ -33,10 +35,39 @@ class App extends Component {
     super(props);
     this.state = {secondBack: require("./images/nightsk.jpeg"),
                     info: "Who is Ryan Jeon?", 
-  developer:  'I am a Full-Stack Developer currently working for a university garage startup based in Evanston, IL. I am looking for any opportunities to learn and become a better developer and use my technical abilities to contribute to inspiring projects.',  
-  student: "I am Sophomore enrolled in a Computer Science program in Northwestern University. I have spent my first year of college as a Computer Science student in Rensselaer Polytechnic Institute, where I have learned much about my career path.",              
-  leader: " "
+  developer:  'I am a Full-Stack Developer currently working'+ 
+              'for a university garage startup based in Evanston,'+
+               'IL. I am looking for any opportunities to learn'+
+                'and become a better developer and use my technical'+
+                 'abilities to contribute to inspiring projects.',  
+
+  student: "I am Sophomore enrolled in a Computer Science program"+
+            "in Northwestern University. I have spent my first year"+
+             "of college as a Computer Science student in Rensselaer"+ 
+             "Polytechnic Institute, where I have learned much about my "+ 
+             "career path.",     
+
+  leader: "More than anything, I would like to be incharge of any projects "+
+          "that I am responsible for. I love leading teams, and have lead many"+
+          "project teams during my career as a developer"
   };
+
+  this.project = {
+    domain: "This domain on it's own is a constantly on-going project!"+
+          " I am updating the website frequently to make the interface"+
+          " more interactly & asthetic. Please do contact me for any advice"+
+          " or suggestions!",
+
+    focalwealth: "Focal Wealth uses SQL database scraped from market intelligence data feeds and "+
+                  "Python script to determine high net-worth individuals in Latin America for" +
+                  "clients seeking investors. Click the icon to access the current Demo!",
+
+    HIIT: "HIIT (High Intensity Interval Training) is an android application that allows"+
+           " users to split a one-minute efficiently to jog, run, and sprint, for an effective high"+
+            "intensity workout. "
+    
+  }
+  
 }
 
 
@@ -53,48 +84,28 @@ class App extends Component {
       <ParallaxProvider>
         <main>
             <nav />
-
-            <StyleRoot>
-            <div className="test" style={styles.fadeIn}>
-              <Banner
-                  min={'-50%'}
-                  max={'50%'}
-                  image= {require("./images/banner.jpg")}
-                  container = "BannerChildren"
-              >
-                <div>
-                  <h1>Meet Ryan!</h1>
-                  
-                  <div className = "Buttons">
-                    <div className = "ButtonWrapper">
-                    <Cbutton label = "LinkedIn" link = "https://www.linkedin.com/in/ryan-yejun-jeon-70b4a7145/" />
-                    <Cbutton label = "Resume" link = "https://drive.google.com/file/d/1IpYA07nDMGNZCquxinFjhmuBIEe1G6up/view?usp=sharing" />
-                    <Cbutton label = "View Source Code" link = "https://github.com/RyanJeon/RyanDomain"/>
-                    </div>
-                  </div>
-                </div>
-              </Banner>
-              </div>
-            </StyleRoot>
+            <First/>
 
             <Banner
                 min={'-50%'}
                 max={'50%'}
                 container = "info-box"
                 image= {this.state.secondBack}
+                bannerContainer = {'secondcontainer'}
                 
             >   
 
-                <div className = "info-title"> 
+
+            <div className = "info-title"> 
+              <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                  <h2> 	&#8212; About Me &#8212; </h2>
+                </ScrollAnimation>
 
 
-                    <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
-                      <h2> 	&#8212; About Me &#8212; </h2>
-                    </ScrollAnimation>
-                </div>
-
-                
+            </div>
+                            
                 <div className = "info-box">
+                
 
                   <div className = "infContainer">
 
@@ -113,7 +124,7 @@ class App extends Component {
                             <div  onClick = {this.changeSecondBack.bind(this, 'nightsk.jpeg', this.state.student)}>
                             <Cbutton width = "300px" label = "Student" />
                             </div>
-                            <div  onClick = {this.changeSecondBack.bind(this, 'nightsk.jpeg', 'A Leader')}>
+                            <div  onClick = {this.changeSecondBack.bind(this, 'nightsk.jpeg', this.state.leader)}>
                             <Cbutton width = "300px" label = "Leader" />
                             </div>
 
@@ -124,7 +135,6 @@ class App extends Component {
                               
                             </div>
                       </div>
-
                       
                     </ScrollAnimation>
                   </div>
@@ -145,6 +155,31 @@ class App extends Component {
                 </div>  
                </ScrollAnimation>
                <div className = "project-info">
+
+
+                  <ProjectSection 
+                  description = {this.project.domain}
+                  title = "This Domain"
+                  image = {require("./images/codingico.png")}
+                  link = "https://github.com/RyanJeon/RyanDomain"
+                  />  
+
+
+
+                  <ProjectSection 
+                  title = "Focal Wealth"
+                  description = {this.project.focalwealth}
+                  image = {require("./images/focalwealth.png")}
+                  link = "https://focalwealth.herokuapp.com/"
+                  />
+
+                  <ProjectSection 
+                  description = {this.project.HIIT}
+                  title = "High Intensity Interval Training App"
+                  image = {require("./images/runico.png")}
+                  link = "https://github.com/RyanJeon/HIIT_v1"
+                  />  
+         
 
                </div>
             </Banner>

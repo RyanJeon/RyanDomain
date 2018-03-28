@@ -25,7 +25,6 @@ nav {
 
 
 .info-box{
-
   color: white;
   position: absolute;
   top: 0;
@@ -42,6 +41,8 @@ nav {
 
 .info-title{
 
+  width: 100%;
+  height: 30vh;;
 }
 
 .infContainer{
@@ -106,6 +107,8 @@ nav {
 
 }
 
+
+/* Project section style  */
 .project-container{
 
   position: absolute;
@@ -117,10 +120,10 @@ nav {
 
 }
 
-
 .project-header{
-  vertical-align: middle;
-  line-height: 25vh;
+
+  position: absolute;
+
 
   color: white;
   text-align: center;
@@ -130,8 +133,10 @@ nav {
 }
 
 .project-info{
+  margin-top: 25vh;
+  background: rgba(0,0,0,.4);
   width: 100%;
-  height: 70%;  
+  height: 74%;  
 }
 
 h1 {
