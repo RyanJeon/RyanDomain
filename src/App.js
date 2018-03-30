@@ -101,7 +101,7 @@ class App extends Component {
                 <div className = "info-box">
                   <div className = "infContainer">
                       <div className = "InfoButtons">
-                        <div className = "ButtonWrapper">
+                        <div className = "ButtonsWrapper">
 
                           <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
                               <h3>

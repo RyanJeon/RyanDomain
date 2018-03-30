@@ -91,7 +91,6 @@ nav {
 
 .InfoButtons{
 
-
   margin-top: 10vh;
   float: left;
 
@@ -106,6 +105,7 @@ nav {
 
 
 .ButtonsWrapper{
+  width: 30%;
   display: block;
 
 }
@@ -188,6 +188,10 @@ h2 {
     padding-left: 4%;
     justify-content: center;
 
+  }
+
+  .ButtonsWrapper{
+    width: 100%;
   }
 
   .infContainer{
