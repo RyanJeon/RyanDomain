@@ -111,19 +111,19 @@ class App extends Component {
 
                           <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
                             <div  onClick = {this.changeSecondBack.bind(this, this.state.developer)}>
-                              <Cbutton width = "300px" label = "Developer"/>
+                              <Cbutton width = "90%" label = "Developer"/>
                             </div>
                           </ScrollAnimation>
                           
                           <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
                             <div  onClick = {this.changeSecondBack.bind(this, this.state.student)}>
-                            <Cbutton width = "300px" label = "Student" />
+                            <Cbutton width = "90%" label = "Student" />
                             </div>
                           </ScrollAnimation>
                           
                           <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
                             <div  onClick = {this.changeSecondBack.bind(this, this.state.leader)}>
-                            <Cbutton width = "300px" label = "Leader" />
+                            <Cbutton width = "90%" label = "Leader" />
                             </div>
                           </ScrollAnimation>
 
