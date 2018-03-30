@@ -6,7 +6,7 @@ import '../App.css';
 
 
 
-const Banner = ({ image, min, max, children, color, container, bannerContainer = "hero-container"}) => (
+const Banner = ({ image, min, max, children, color, container, bannerContainer = "banner-container"}) => (
     <div className={bannerContainer}>
         <Parallax offsetYMin={min} offsetYMax={max} slowerScrollRate>
             <div

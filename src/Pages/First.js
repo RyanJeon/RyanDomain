@@ -35,9 +35,9 @@ class First extends Component{
                   min={'-50%'}
                   max={'50%'}
                   image= {require("../images/banner.jpg")}
-                  container = "BannerChildren"
+                  container = "BannerChildren"               
               >
-                <div>
+                <div className = "first">
                   <h1>Meet Ryan!</h1>
                   
                   <div className = "Buttons">

@@ -33,7 +33,7 @@ const styles = {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {secondBack: require("./images/nightsk.jpeg"),
+    this.state = {
                     info: "Who is Ryan Jeon?", 
   developer:  'I am a Full-Stack Developer currently working'+ 
               'for a university garage startup based in Evanston,'+
@@ -71,11 +71,8 @@ class App extends Component {
 }
 
 
-  changeSecondBack(tag, info){
-    this.setState({secondBack: require(`./images/${tag}`)});
+  changeSecondBack( info){
     this.setState({info: info});
-
-
 
   }
 
@@ -87,64 +84,68 @@ class App extends Component {
             <First/>
 
             <Banner
-                min={'-50%'}
-                max={'50%'}
-                container = "info-box"
-                image= {this.state.secondBack}
-                bannerContainer = {'secondcontainer'}
-                
-            >   
+                  min={'-50%'}
+                  max={'50%'}
+                  image= {require("./images/upper_tress.jpg")}
+                  container = "info-box"
+                  bannerContainer = "secondcontainer"
+              >
 
 
-            <div className = "info-title"> 
-              <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
-                  <h2> 	&#8212; About Me &#8212; </h2>
-                </ScrollAnimation>
-
-
-            </div>
+              <div className = "info-title"> 
+                <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                    <h2> 	&#8212; About Me &#8212; </h2>
+                  </ScrollAnimation>
+              </div>
                             
                 <div className = "info-box">
-                
-
                   <div className = "infContainer">
-
-
-
-                    <ScrollAnimation animateIn="fadeIn" duration={4}  animateOnce={true}>
                       <div className = "InfoButtons">
                         <div className = "ButtonWrapper">
-                            <h3>
-                            I am a/an..
-                            </h3>
 
-                            <div  onClick = {this.changeSecondBack.bind(this, 'nightsk.jpeg', this.state.developer)}>
+                          <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                              <h3>
+                              I am a..
+                              </h3>
+                          </ScrollAnimation>
+
+                          <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                            <div  onClick = {this.changeSecondBack.bind(this, this.state.developer)}>
                               <Cbutton width = "300px" label = "Developer"/>
                             </div>
-                            <div  onClick = {this.changeSecondBack.bind(this, 'nightsk.jpeg', this.state.student)}>
+                          </ScrollAnimation>
+                          
+                          <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                            <div  onClick = {this.changeSecondBack.bind(this, this.state.student)}>
                             <Cbutton width = "300px" label = "Student" />
                             </div>
-                            <div  onClick = {this.changeSecondBack.bind(this, 'nightsk.jpeg', this.state.leader)}>
+                          </ScrollAnimation>
+                          
+                          <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                            <div  onClick = {this.changeSecondBack.bind(this, this.state.leader)}>
                             <Cbutton width = "300px" label = "Leader" />
                             </div>
+                          </ScrollAnimation>
 
                         </div>
 
+                          
                               <div className = "info">
+                              <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
                                    {this.state.info}
-                              
-                            </div>
+                              </ScrollAnimation>
+                            </div>               
                       </div>
-                      
-                    </ScrollAnimation>
+                                            
                   </div>
-                </div>
+                   
+                </div>                
             </Banner>
 
             <Banner
                 min={'-50%'}
                 max={'50%'}
-                image= {require("./images/dawn.jpg")}
+                image= {require("./images/lower_tress.jpg")}
                 container = "project-container"
             >
                <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
