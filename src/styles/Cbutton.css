@@ -1,9 +1,9 @@
 .SCbutton{
     text-align: center;
     vertical-align: middle;
-    line-height: 50px;
+    line-height: 300%;
     width: 150px;
-    height: 50px;
+    height: 33%;
     border-style: solid;
     border-color: black;
     border-radius: 5px;

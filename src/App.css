@@ -214,7 +214,19 @@ h2 {
 }
 
 @media screen and (max-height: 490px){
+  .info-title{
+    height: 20vh;
+  }
+  .InfoButtons{
+    
+    margin-top: 0;
 
+  }
+
+  .infContainer{
+    margin-top:20vh;
+    height: 80vh;
+  }
 
   
 }
