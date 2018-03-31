@@ -41,29 +41,29 @@ class App extends Component {
                 'and become a better developer and use my technical'+
                  'abilities to contribute to inspiring projects.',  
 
-  student: "I am Sophomore enrolled in a Computer Science program"+
+  student: "I am a Sophomore enrolled in a Computer Science program"+
             "in Northwestern University. I have spent my first year"+
              "of college as a Computer Science student in Rensselaer"+ 
              "Polytechnic Institute, where I have learned much about my "+ 
-             "career path.",     
+             "career path and passion.",     
 
-  leader: "More than anything, I would like to be incharge of any projects "+
+  leader: "More than anything, I would like to be in charge of any projects "+
           "that I am responsible for. I love leading teams, and have lead many"+
-          "project teams during my career as a developer"
+          "project teams during my career as a developer."
   };
 
   this.project = {
-    domain: "This website on it's own is a constantly on-going project!"+
+    domain: "This website on its own is a constantly on-going project!"+
           " I am updating the website frequently to make the interface"+
-          " more interactly & asthetic. Please do contact me for any advice"+
-          " or suggestions!",
+          " more interactive & asthetic. Please do contact me for any advice"+
+          " or suggestions for the website!",
 
     focalwealth: "Focal Wealth uses SQL database scraped from market intelligence data feeds and "+
                   "Python script to determine high net-worth individuals in Latin America for" +
                   "clients seeking investors. Click the icon to access the current Demo!",
 
     HIIT: "HIIT (High Intensity Interval Training) is an android application that allows"+
-           " users to split a one-minute efficiently to jog, run, and sprint, for an effective high"+
+           " users to split 1 minute efficiently to jog, run, and sprint, for an effective high"+
             "intensity workout. "
     
   }
