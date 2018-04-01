@@ -62,13 +62,14 @@ class Second extends Component{
           <div className = "info-box">
             <div className = "infContainer">
                 <div className = "InfoButtons">
+                
                   <div className = "ButtonsWrapper">
-
-                    <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
-                        <h3>
+                  <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
+                        <h3 style = {{paddingRight: "10%"}}>
                         I am a..
                         </h3>
                     </ScrollAnimation>
+
 
                     <ScrollAnimation animateIn="fadeIn"  animateOnce={true}>
                       <div  onClick = {this.changeSecondBack.bind(this, this.state.developer)}>

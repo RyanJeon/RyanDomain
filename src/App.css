@@ -6,34 +6,43 @@ body {
   position: relative;
   background: white;
   min-height: 300vh;
-  font-family: 'Futura', 'Helvetica', sans-serif;
   font-weight: normal;
 }
 
-nav {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background-color: rgba(#4DD0E1, 0.85);
+
+/* Multiple Page Uses*/
+.ButtonsWrapper{ /*General Wrapper for the Buttons*/
+  text-align: center; 
+  width: 30%;
+  display: block;
+
 }
+
+/*First Page Only*/
 
 .first{
   font-family: 'Raleway', sans-serif;
 }
 
 .contact{
-
   text-align: center;
   width: 100%
 }
 
-/* Information styling*/
+.Buttons{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  
+
+}
 
 
-.info-box{
+/*Second Page Only*/
+
+.info-box{ /*Main Container*/
   color: white;
   position: absolute;
   top: 0;
@@ -46,16 +55,6 @@ nav {
   justify-content: center;
 
 }
-
-.main-container {
-  background: #38618C;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-
-}
-
 
 .info-title{
   font-family: 'Raleway', sans-serif;
@@ -110,26 +109,7 @@ nav {
 }
 
 
-
-.ButtonsWrapper{
-  width: 30%;
-  display: block;
-
-}
-
-
-.Buttons{
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
-  
-
-}
-
-
-/* Project section style  */
+/* Third Page Only  */
 .project-container{
 
   position: absolute;
@@ -143,15 +123,19 @@ nav {
 
 .project-header{
   font-family: 'Raleway', sans-serif;
-  background: rgba(0,0,0,.4); 
+  background: rgba(0,0,0,.4);
   position: absolute;
   
-  margin-top: 0vh;
 
   float: left;
 
   color: white;
   text-align: center;
+
+
+  vertical-align: middle;
+  line-height: 9vh;
+
   width: 100%;
   height: 25vh;
 
@@ -164,6 +148,9 @@ nav {
   height: 75%;  
 }
 
+
+/*Font Sizes*/
+
 h1 {
   font-weight: normal;
   font-size: 6vw;
@@ -174,7 +161,7 @@ h2 {
   font-size: 5vw;
 }
 
-
+/*Screen Size Adjustments*/
 
 @media screen and (max-width: 450px){
   h1 {
