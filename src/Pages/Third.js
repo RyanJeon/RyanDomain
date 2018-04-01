@@ -22,11 +22,11 @@ class Third extends Component{
               " or suggestions for the website!",
     
         focalwealth: "Focal Wealth uses SQL database scraped from market intelligence data feeds and "+
-                      "Python script to determine high net-worth individuals in Latin America for" +
+                      "Python script to determine high net-worth individuals in Latin America for " +
                       "clients seeking investors. Click the icon to access the current Demo!",
     
         HIIT: "HIIT (High Intensity Interval Training) is an android application that allows"+
-               " users to split 1 minute efficiently to jog, run, and sprint, for an effective high"+
+               " users to split 1 minute efficiently to jog, run, and sprint, for an effective high "+
                 "intensity workout. "
         
       }

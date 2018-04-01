@@ -16,15 +16,15 @@ class Second extends Component{
         super(props);
         this.state = {
                         info: "Who is Ryan Jeon?", 
-      developer:  'I am a Full-Stack Developer currently working'+ 
+      developer:  'I am a Full-Stack Developer currently working '+ 
                   'for a university garage startup based in Evanston,'+
-                   'IL. I am looking for any opportunities to learn'+
-                    'and become a better developer and use my technical'+
+                   'IL. I am looking for any opportunities to learn '+
+                    'and become a better developer and use my technical '+
                      'abilities to contribute to inspiring projects.',  
     
-      student: "I am a Sophomore enrolled in a Computer Science program"+
-                "in Northwestern University. I have spent my first year"+
-                 "of college as a Computer Science student in Rensselaer"+ 
+      student: "I am a Sophomore enrolled in a Computer Science program "+
+                "in Northwestern University. I have spent my first year "+
+                 "of college as a Computer Science student in Rensselaer "+ 
                  "Polytechnic Institute, where I have learned much about my "+ 
                  "career path and passion.",     
     
