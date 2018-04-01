@@ -39,7 +39,6 @@ class First extends Component{
               >
                 <div className = "first">
                   <h1>Meet Ryan!</h1>
-                  
                   <div className = "Buttons">
                     <div className = "ButtonWrapper">
                     <Cbutton label = "LinkedIn" link = "https://www.linkedin.com/in/ryan-yejun-jeon-70b4a7145/" />
@@ -47,6 +46,10 @@ class First extends Component{
                     <Cbutton label = "View Source Code" link = "https://github.com/RyanJeon/RyanDomain"/>
                     </div>
                   </div>
+                  <div className = "contact" >
+                      <div> ✉ ryanjeon98@gmail.com </div>
+                       <div> ☎ 949-382-0780 </div>
+                    </div>
                 </div>
               </Banner>
               </div>

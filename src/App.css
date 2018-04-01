@@ -24,6 +24,12 @@ nav {
   font-family: 'Raleway', sans-serif;
 }
 
+.contact{
+
+  text-align: center;
+  width: 100%
+}
+
 /* Information styling*/
 
 
@@ -77,6 +83,7 @@ nav {
   text-align: center;
 
 
+
   height: 70%;
   width: 40%;
   margin-left: 20%;
@@ -84,7 +91,7 @@ nav {
 
   vertical-align: middle;
   
-  font-size: 2.5vw;
+  font-size: 2.1vw;
 }
 
 
