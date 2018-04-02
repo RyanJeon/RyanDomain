@@ -1,0 +1,52 @@
+body {
+    background: white;
+    min-height: 100vh;
+
+    justify-content: center;
+
+    font-family: 'Raleway', sans-serif;
+
+
+    display: flex;
+    
+}
+
+.blog-container{
+    margin-top: 25%;
+
+
+    justify-content: center;
+
+    
+
+    width: 40vw;
+    height: 50vh;
+
+}
+
+
+.blog-title{
+
+    text-align: center;
+
+    height: 30%;
+}
+
+.blog-info{
+    font-size: 3.5vh;
+    text-align: center;
+
+    height: 70%;
+}
+
+.blog-icon{
+    margin-left: 15vw;
+
+    display: block;
+    height: 55%;
+}
+
+.blog-return{
+    font-size: 2vh;
+    margin-top: 3%;
+}

@@ -38,7 +38,7 @@ class First extends Component{
                   image= {require("../images/banner.jpg")}
                   container = "BannerChildren"               
               >
-                <NavBar/>
+                
                 <div className = "first">
                 
                   <h1>Meet Ryan!</h1>
