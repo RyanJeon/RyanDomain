@@ -11,3 +11,18 @@
     cursor: pointer;
 
 }
+
+
+.SCbutton:hover{
+	text-decoration: none;
+	color: white;
+	text-shadow: none;
+	-webkit-transition: 200ms linear 0s;
+	-moz-transition: 200ms linear 0s;
+	-o-transition: 200ms linear 0s;
+	transition: 200ms linear 0s;
+    outline: 2px;
+    transform: scale(1.05);
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+
+}

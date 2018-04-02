@@ -6,6 +6,7 @@ import Cbutton from '../components/Cbutton';
 import { bounce, fadeIn, fadeOut } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import {Banner} from '../components/Banner';
+import NavBar from '../components/NavBar';
 
 
 const styles = {
@@ -37,7 +38,9 @@ class First extends Component{
                   image= {require("../images/banner.jpg")}
                   container = "BannerChildren"               
               >
+                <NavBar/>
                 <div className = "first">
+                
                   <h1>Meet Ryan!</h1>
                   <div className = "Buttons">
                     <div className = "ButtonWrapper">

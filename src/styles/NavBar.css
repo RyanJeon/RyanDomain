@@ -1,0 +1,46 @@
+.nav-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding-top: 20px;
+    margin-left: 20px;
+
+    width: 15%;
+    
+    display: flex;
+    justify-content: space-between
+}
+
+.nav-item{
+
+}
+
+
+.nav-item:hover{
+	text-decoration: none;
+	color: black;
+	text-shadow: none;
+	-webkit-transition: 200ms linear 0s;
+	-moz-transition: 200ms linear 0s;
+	-o-transition: 200ms linear 0s;
+	transition: 200ms linear 0s;
+    outline: 2px;
+    transform: scale(1.1);
+
+}
+
+
+@media screen and (max-width: 1250px) {
+    .nav-container{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .nav-item:hover{
+
+        color: gray;
+
+    
+    }
+}
