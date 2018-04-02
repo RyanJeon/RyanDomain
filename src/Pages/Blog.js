@@ -13,7 +13,7 @@ class Blog extends Component{
         return(
             <div className = "blog-container">
                 <div className = "blog-title">
-                    <h1> Coming Soon!</h1>
+                    Coming Soon!   
                 </div>
 
                 <div className = "blog-info">

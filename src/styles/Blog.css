@@ -1,32 +1,21 @@
-body {
-    background: white;
-    min-height: 100vh;
-
-    justify-content: center;
-
-    font-family: 'Raleway', sans-serif;
-
-
-    display: flex;
-    
-}
 
 .blog-container{
-    margin-top: 25%;
+    margin-top: 25vh;
+
 
 
     justify-content: center;
 
     
 
-    width: 40vw;
+    width: 100vw;
     height: 50vh;
 
 }
 
 
 .blog-title{
-
+    font-size: 10vh;
     text-align: center;
 
     height: 30%;
@@ -40,13 +29,27 @@ body {
 }
 
 .blog-icon{
-    margin-left: 15vw;
+    margin-left: 45vw;
 
     display: block;
-    height: 55%;
+    width: 10%;
 }
 
 .blog-return{
     font-size: 2vh;
     margin-top: 3%;
+}
+
+@media screen and (max-width: 400px){
+    .blog-icon{
+        width: 60%;
+        margin-left: 20vw;
+
+    }
+}
+
+@media screen and (max-width: 330px){
+    .blog-title{
+        margin-bottom: 15%;
+    }
 }
