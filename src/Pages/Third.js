@@ -18,7 +18,7 @@ class Third extends Component{
       this.project = {
         domain: "This website on its own is a constantly on-going project!"+
               " I am updating the website frequently to make the interface"+
-              " more interactive & asthetic. Please do contact me for any advice"+
+              " more interactive & aesthetic. Please do contact me for any advice"+
               " or suggestions for the website!",
     
         focalwealth: "Focal Wealth uses SQL database scraped from market intelligence data feeds and "+

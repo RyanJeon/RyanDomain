@@ -15,14 +15,14 @@ const NavBar = (props) => {
         <div className = "nav-container">
 
 
-            <div className = "nav-item" onClick = {() => history.push('/blog')} > 
+            <div className = "nav-item" onClick = {() => history.push('/updates')} > 
                 Updates
             </div>
             <div className = "nav-item" onClick = {() => history.push('/blog')}>
                 Blog
             </div>
 
-            <div className = "nav-item" onClick = {() => history.push('/blog')}>
+            <div className = "nav-item" onClick = {() => history.push('/more')}>
                 More
             </div>
 
