@@ -1,31 +1,21 @@
 import React, {Component} from 'react';
-import '../styles/Blog.css';
-import BackButton from '../components/BackButton'
+import NavBar from '../components/NavBar';
+import "../styles/Blog.css"
+import Construction from './Construction';
 
 
 
 class Blog extends Component{
-    back(history){
-        history.push('/')
-    }
-
     render(){
         return(
-            <div className = "blog-container">
-                <div className = "blog-title">
-                    Coming Soon!   
-                </div>
+            <div className = "blogContainer"> 
+                <NavBar pagetype = "Blog" {...this.props}/>
+                <Construction {...this.props} />
 
-                <div className = "blog-info">
-                    The page is currently under-construction, preparing to be born.
-                    <img className = "blog-icon" src = {require('../images/under.png')} />
-                    <BackButton {...this.props} />
-                </div>
-                
             </div>
+
         )
     }
-
 }
 
-export default Blog;
+export default Blog; 

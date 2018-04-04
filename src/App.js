@@ -3,7 +3,6 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import First from './Pages/First';
 import Second from './Pages/Second';
 import Third from './Pages/Third';
-import Blog from './Pages/Blog';
 
 
 import NavBar from './components/NavBar';
@@ -17,11 +16,10 @@ class App extends Component {
       <ParallaxProvider>
           
         <main>
-            <NavBar/>
             <First />
             <Second/>
             <Third/>
-            <NavBar {...this.props} />         
+            <NavBar pagetype = "" {...this.props} />         
         </main>
 
       </ParallaxProvider>
