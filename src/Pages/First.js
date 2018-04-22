@@ -45,7 +45,7 @@ class First extends Component{
                   <div className = "Buttons">
                     <div className = "ButtonWrapper">
                     <Cbutton label = "LinkedIn" link = "https://www.linkedin.com/in/ryan-yejun-jeon-70b4a7145/" />
-                    <Cbutton label = "Resume" link = "https://drive.google.com/file/d/1D5R6Tj4s7QBb850VOzn8lKwuB4X47d1q/view?usp=sharing" />
+                    <Cbutton label = "Resume" link = "https://drive.google.com/file/d/1P3aqruPKlmfanY2GJym84V1V8FGWwmNC/view?usp=sharing" />
                     <Cbutton label = "View Source Code" link = "https://github.com/RyanJeon/RyanDomain"/>
                     </div>
                   </div>
