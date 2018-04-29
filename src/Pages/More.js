@@ -1,21 +1,20 @@
 import React, {Component} from 'react';
 import NavBar from '../components/NavBar';
-import "../styles/Blog.css"
+import "../styles/More.css"
 import Construction from '../components/Construction';
 
 
 
-class Blog extends Component{
+class More extends Component{
     render(){
         return(
-            <div className = "blogContainer"> 
-                <NavBar pagetype = "Blog" {...this.props}/>
+            <div className = "moreContainer"> 
+                <NavBar pagetype = "More" {...this.props}/>
                 <Construction {...this.props} />
-
             </div>
 
         )
     }
 }
 
-export default Blog; 
+export default More; 

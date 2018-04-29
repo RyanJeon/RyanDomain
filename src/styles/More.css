@@ -1,0 +1,17 @@
+.moreContainer{
+    background: #C99C9C;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.moreBody{
+
+    margin-top: 20vh;
+    
+    background: yellow;
+    height: 70vh;
+    width: 50vw;
+
+}

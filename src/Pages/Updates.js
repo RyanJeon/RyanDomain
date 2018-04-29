@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import NavBar from '../components/NavBar';
-import Construction from './Construction';
+import Construction from '../components/Construction';
 import '../styles/Updates.css'
 
 
