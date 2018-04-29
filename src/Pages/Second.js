@@ -28,9 +28,11 @@ class Second extends Component{
                  "Polytechnic Institute, where I have learned much about my "+ 
                  "career path and passion.",     
     
-      leader: "More than anything, I would like to be in charge of any projects "+
-              "that I am responsible for. I love leading teams, and have lead many "+
-              "project teams during my career as a developer."
+      leader: 
+
+              "I am currently leading a team of developers in Focal Wealth as well as " +
+              "Front-End developers in my FareShare project group. Responsibility as a leader "+
+              "motivates me to work harder, and I seek to find more of similar opportunities in the future."
       };
           
     }
